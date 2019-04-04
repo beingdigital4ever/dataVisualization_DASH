@@ -72,7 +72,7 @@ app.layout = html.Div([
     [dash.dependencies.State('graph-update', 'interval')]
     )
 
-def update_graph(data_names):
+def update_graph(data_names, n):
     graphs = []
     update_obd_values(times, oil_temps, intake_temps, coolant_temps, rpms, speeds, throttle_pos)
 
